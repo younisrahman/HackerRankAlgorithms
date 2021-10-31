@@ -16,7 +16,8 @@ import sys
 
 def birthdayCakeCandles(candles):
     # Write your code here
-    return len([x for x in candles if max(candles) == candles[x]])
+    # return len([x for x in candles if max(candles) == x]) error when use big array
+    return candles.count(max(candles))
 
 
 if __name__ == '__main__':
